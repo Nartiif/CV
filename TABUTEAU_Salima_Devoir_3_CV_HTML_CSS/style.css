@@ -155,7 +155,6 @@ aside span {
 #main_content {
     padding: 20px 5%;
     display: grid;
-
 }
 main div section {
     margin: 15px auto;
@@ -181,12 +180,40 @@ footer div {
     margin: 10px;
 }
 .ligne_xp div {
+    height: fit-content;
+    min-width: 100%;
+    flex-direction: row;
+}
+.ligne {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 10px;
     height: fit-content;
     min-width: 100%;
+    justify-content: flex-start;
+}
+.ligne:hover {
+    display: grid;
+}
+.ligne_xp div:hover {
+    background-color: #e3e3e3;
+}
+.blue_line::before {
+    justify-content: flex-start;
+    background-color: #17abb3;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+}
+.blue_line {
+    position: relative;
+}
+.blue_line:hover::before {
+    width: 5px;
 }
 .ligne_xp div h4 {
     margin: 0px;
