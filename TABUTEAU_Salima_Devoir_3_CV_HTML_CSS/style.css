@@ -91,6 +91,7 @@ header nav ul li a img {
     object-fit: cover;
     border: #fff solid 5px;
     border-radius: 50%;
+    cursor: zoom-in;
 }
 .icons {
     width: 15px;
@@ -178,6 +179,9 @@ footer div {
     height: 20px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(139deg) brightness(103%) contrast(101%);
     margin: 10px;
+}
+.icons2:hover {
+    opacity: 60%;
 }
 .ligne_xp div {
     height: fit-content;
